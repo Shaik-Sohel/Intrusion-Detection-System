@@ -8,8 +8,6 @@ This project demonstrates a Security Operations Center (SOC) home lab built usin
 - Suricata IDS
 - Kali Linux
 - Ubuntu Linux
-- Windows 11
-- Sysmon
 
 The objective is to simulate real-world cyber attacks, collect logs, detect threats, and investigate security incidents.
 
@@ -21,10 +19,6 @@ Kali Linux acts as the attacker machine.
 
 Ubuntu hosts:
 - Suricata IDS
-- Wazuh Agent
-
-Windows hosts:
-- Sysmon
 - Wazuh Agent
 
 Wazuh Server:
@@ -54,14 +48,6 @@ Functions:
 - Signature-based Detection
 - Alert Generation
 
-### Sysmon
-
-Functions:
-- Process Monitoring
-- Network Connection Logging
-- Registry Monitoring
-- Event Collection
-
 ---
 
 ## Lab Environment
@@ -83,15 +69,6 @@ Role:
 
 Installed:
 - Suricata
-- Wazuh Agent
-
-### Windows 11
-
-Role:
-- Endpoint Monitoring
-
-Installed:
-- Sysmon
 - Wazuh Agent
 
 ---
@@ -126,14 +103,6 @@ Detection:
 
 ---
 
-### 3. Windows Failed Logins
-
-Detection:
-- Event ID 4625
-- Wazuh Authentication Alerts
-
----
-
 ### 4. File Integrity Monitoring
 
 Linux:
@@ -151,13 +120,6 @@ Detection:
 
 ---
 
-### 5. PowerShell Activity Monitoring
-
-Detection:
-- Sysmon Events
-- Wazuh Alerts
-
----
 
 ## MITRE ATT&CK Techniques
 
@@ -175,11 +137,10 @@ Detection:
 
 1. Generate attack traffic from Kali Linux
 2. Suricata analyzes network traffic
-3. Sysmon monitors Windows activity
-4. Wazuh collects logs
-5. Wazuh generates alerts
-6. Analyst investigates alerts
-7. Incident response actions performed
+3. Wazuh collects logs
+4. Wazuh generates alerts
+5. Analyst investigates alerts
+6. Incident response actions performed
 
 ---
 
