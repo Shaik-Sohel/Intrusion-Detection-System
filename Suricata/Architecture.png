@@ -1,0 +1,31 @@
+                     +----------------------+
+                     |      Kali Linux      |
+                     |   Attacker Machine   |
+                     +----------------------+
+                                |
+                                |
+               Nmap | SSH | Recon | Traffic
+                                |
+                                v
+                     +----------------------+
+                     |      Ubuntu VM       |
+                     |                      |
+                     |    Suricata IDS      |
+                     |    Wazuh Agent       |
+                     +----------------------+
+                                |
+                                |
+                         Alerts & Logs
+                                |
+                                v
+                     +----------------------+
+                     |    Wazuh Manager     |
+                     |     SIEM / XDR       |
+                     +----------------------+
+                                |
+                                v
+                     +----------------------+
+                     |   Wazuh Dashboard    |
+                     |  Threat Hunting      |
+                     | Alert Investigation  |
+                     +----------------------+
